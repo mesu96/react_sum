@@ -1,15 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Sum = ({ a, b }) => {
-  const result = a + b;
-
-  return (
-    <p>
-      Sum of {a} and {b} is {result}
-    </p>
-  );
-};
+export const Sum = ({ a, b }) => <p>{`Sum of ${a} and ${b} is ${a + b}`}</p>;
 
 Sum.propTypes = {
   a: PropTypes.number,
